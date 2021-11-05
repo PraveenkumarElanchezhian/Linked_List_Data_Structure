@@ -1,8 +1,9 @@
 package Data_Structure_practice_problem;
-
-class LinkedList {
+import java.util.LinkedList;
+/*class LinkedList {
 	Node head;
 	Node tail;
+
 	public Node push(int data) {
 		Node newNode = new Node(data);
 		if (head == null) {
@@ -14,38 +15,44 @@ class LinkedList {
 		}
 		return newNode;
 	}
+
 	public void show() {
 		Node temp = head;
 		if (head == null) {
-		System.out.println("Linked List is Empty");
+			System.out.println("Linked List is Empty");
 		} else {
-		while (temp != null) {
-		System.out.print(temp.data + " ");
-		temp = temp.next;
+			while (temp != null) {
+				System.out.print(temp.data + " ");
+				temp = temp.next;
+			}
 		}
-		}
-		}
+	}
 
-		public Node append(int data){
-			return head;
+	public Node append(int data) {
+		return head;
 
-		}
-}
-public class LinkedListMain {
-
-	public static void main(String[] args) {
-		LinkedList list = new LinkedList();
-		list.push(70);
-		list.push(30);
-		list.push(56);
-		list.show();
 	}
 }
+
 class Node {
 	int data;
 	Node next;
+
 	Node(int data) {
 		this.data = data;
 		this.next = null;
+	}
+}*/
+
+public class LinkedListMain {
+
+	public static void main(String[] args) {
+		LinkedList<Integer> list = new LinkedList<Integer>();
+		list.add(70);
+		list.add(30);
+		list.add(56);
+		//list.show();
+		list.removeFirst();
+		System.out.println(list);
 	}
 }
