@@ -50,8 +50,9 @@ public class LinkedListMain {
 		LinkedList<Integer> list = new LinkedList<Integer>();
 		list.add(56);
 		list.add(30);
+		list.add(40);
 		list.add(70);
-		list.removeLast();
+		
 		System.out.println(list);
 	}
 }
