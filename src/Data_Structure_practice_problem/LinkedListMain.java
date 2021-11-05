@@ -15,6 +15,22 @@ class LinkedList {
 		}
 		return newNode;
 	}
+	public void show() {
+		Node temp = head;
+		if (head == null) {
+		System.out.println("Linked List is Empty");
+		} else {
+		while (temp != null) {
+		System.out.print(temp.data + " ");
+		temp = temp.next;
+		}
+		}
+		}
+
+		public Node append(int data){
+			return head;
+
+		}
 }
 
 public class LinkedListMain {
@@ -24,7 +40,7 @@ public class LinkedListMain {
 		list.push(70);
 		list.push(30);
 		list.push(56);
-		System.out.println(list.toString());
+		list.show();
 	}
 }
 
