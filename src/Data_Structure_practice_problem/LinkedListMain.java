@@ -3,7 +3,6 @@ package Data_Structure_practice_problem;
 class LinkedList {
 	Node head;
 	Node tail;
-
 	public Node push(int data) {
 		Node newNode = new Node(data);
 		if (head == null) {
@@ -32,7 +31,6 @@ class LinkedList {
 
 		}
 }
-
 public class LinkedListMain {
 
 	public static void main(String[] args) {
@@ -43,11 +41,9 @@ public class LinkedListMain {
 		list.show();
 	}
 }
-
 class Node {
 	int data;
 	Node next;
-
 	Node(int data) {
 		this.data = data;
 		this.next = null;
