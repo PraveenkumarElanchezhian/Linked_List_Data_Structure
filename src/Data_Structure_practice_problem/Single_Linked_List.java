@@ -44,6 +44,14 @@ public class Single_Linked_List {
 		currNode.next=temp.next;
 		temp.next=currNode;	
 	}
+	public void popFirstElement() {
+
+		if (head == null)
+			System.out.println("No Element in Linked LIst");
+		Node temp = head;
+		head = head.next;
+
+	}
 	public void display() {
 		Node n = head;
 		if (head == null) {
