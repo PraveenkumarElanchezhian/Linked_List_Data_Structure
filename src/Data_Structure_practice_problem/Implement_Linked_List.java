@@ -8,7 +8,6 @@ public class Implement_Linked_List {
 		list.append(56);
 		list.append(30);
 		list.append(70);
-		list.insertBetweenValue(12, 2);
 		list.popFirstElement();
 		list.display();
 	}
