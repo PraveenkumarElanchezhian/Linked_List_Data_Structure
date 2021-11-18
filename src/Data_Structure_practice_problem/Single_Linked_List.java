@@ -7,7 +7,7 @@ public class Single_Linked_List {
 	        Node newNode = new Node(data);
 	        if (head == null) {
 	            head = newNode;
-	            head.next = this.tail;
+	            head.next = tail;
 	        } else {
 	            if (head.next == null) {
 	                newNode.prev = head;
@@ -20,6 +20,7 @@ public class Single_Linked_List {
 	            }
 	        }
 	    }
+
 	public Node push(int data) {
 		Node newNode = new Node(data);
 		if (head == null) {
@@ -31,10 +32,23 @@ public class Single_Linked_List {
 		}
 		return newNode;
 	}
+	public void insertBetweenValue(int data,int  position) {
+		Node currNode=new Node(data);
+		currNode.data=data;
+		currNode.next=null;
+		Node temp=head;
+		for(int i=0;i<position-1;i++)
+		{
+			temp=temp.next;	
+		}
+		currNode.next=temp.next;
+		temp.next=currNode;	
+	}
 	public void display() {
 		Node n = head;
 		if (head == null) {
 			System.out.println("Linked list is Empty");
+
 		} else {
 			while (n != null) {
 				System.out.print(n.data + " ");
