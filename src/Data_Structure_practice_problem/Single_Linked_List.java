@@ -45,18 +45,24 @@ public class Single_Linked_List {
 		temp.next=currNode;	
 	}
 	public void popFirstElement() {
-
 		if (head == null)
 			System.out.println("No Element in Linked LIst");
 		Node temp = head;
 		head = head.next;
-
+	}
+	public void popLastElement() {
+		if (head == null)
+			if (head.next == null) {
+			}
+		Node second_last = head;
+		while (second_last.next.next != null)
+			second_last = second_last.next;
+		second_last.next = null;
 	}
 	public void display() {
 		Node n = head;
 		if (head == null) {
 			System.out.println("Linked list is Empty");
-
 		} else {
 			while (n != null) {
 				System.out.print(n.data + " ");
