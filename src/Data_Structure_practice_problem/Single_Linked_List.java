@@ -42,7 +42,6 @@ public class Single_Linked_List {
 			System.out.println("No Element in Linked LIst");
 		Node temp = head;
 		head = head.next;
-
 	}
 	public void popLastElement() {
 		if (head == null)
