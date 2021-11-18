@@ -13,6 +13,10 @@ public class Implement_Linked_List {
 		list.display();
 		System.out.println();
 		System.out.println("Search the element => 56,30,70");
+		list.insertBetweenValue(40, 2);
+		list.display();
+		System.out.println();
+		System.out.println("Search the element => 56,30,40,70");
 		Scanner userInput=new Scanner(System.in);
 		int num=userInput.nextInt();
 		list.search(num);
